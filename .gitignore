@@ -1,0 +1,6 @@
+env
+.swp*
+**.pyc
+**/migrations
+**/__pycache__
+pizzaFood/db.sqlite3

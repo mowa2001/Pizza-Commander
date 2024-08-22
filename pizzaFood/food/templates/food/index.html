@@ -1,0 +1,14 @@
+{% extends 'food/base.html' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<h2>Bienvenue sur Pizza Commander</h2>
+
+<!-- Insertion de l'image -->
+<img src="https://previews.123rf.com/images/vadimgozhda/vadimgozhda1410/vadimgozhda141001063/32676014-sourire-livraison-femme-enclos-de-pizza-et-agenda-pour-passer-commande-par-t%C3%A9l%C3%A9phone.jpg" alt="Image de présentation" class="img-fluid" style="max-width: 100%; height: auto;">
+
+<p>Découvrez nos délicieuses pizzas et passez votre commande dès aujourd'hui !</p>
+
+<a href="{% url 'menu' %}" class="btn btn-primary">Voir le menu</a>
+{% endblock %}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Pizza Commander{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'food/css/style.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-danger text-white text-center p-4">
+        <h1 style="color: black;">Pizza Commander</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="text-white">Accueil</a> |
+            <a href="{% url 'menu' %}" class="text-white">Menu</a> |
+            <a href="{% url 'cart' %}" class="text-white">Panier</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-4">
+      <p>&copy; 2024 Pizza Commander. Tous droits réservés.</p>
+  </footer>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

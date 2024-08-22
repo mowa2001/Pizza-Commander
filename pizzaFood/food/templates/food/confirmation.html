@@ -1,0 +1,10 @@
+{% extends 'food/base.html' %}
+
+{% block title %}Confirmation de commande{% endblock %}
+
+{% block content %}
+<h2>Merci pour votre commande !</h2>
+<p>Votre commande numéro <strong>{{ order.id }}</strong> a été passée avec succès.</p>
+<p><strong>Total: ${{ order.total_price }}</strong></p>
+<a href="{% url 'menu' %}" class="btn btn-primary btn-block">Retourner au menu</a>
+{% endblock %}
