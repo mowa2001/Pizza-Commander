@@ -1,44 +1,48 @@
-***déployer un projet Django sur Heroku***
+# deployer un projet django sur heroku
+1-CREER VOTRE DJANGO</br> 
+Assurez vous que l'environnemetn virtual est active si vous en avez.
 
-1-CREER VOTRE DJANGO
-Assurez-vous que l'environnement virtuel est actif si vous en avez.
+2-INSTALLER psycopg2, gunicorn, django-heroku, dj_database_url</br> 
 
-2-INSTALLATEUR psycopg2, gunicorn, django-heroku, dj_database_url
+3-CREER LE FICHIER runtime.txt</br> 
 
-3-CREER LE FICHIER runtime.txt
+4-CREER LE FICHIER Procfile sans extension</br> 
 
-4-CREER LE FICHIER Procfile sans extension
+5-GENERER Le fichier requirements.txt
+Rassenble tout vous pakage dans le fichier requirements.txt grace a la commade suivanate.
+pip freeze > requirements.txt</br>
 
-5-GENERER Le fichier exigences.txt Rassenble tout vous pakage dans le fichier exigences.txt grâce à la commade suivanate. pip geler> exigences.txt
 
-PROJET DE 6 METRES DE TONNES SUR GIT
+6-METTRE TON PROJECT SUR GIT
+                                                                                     
 
---CREER UN CONPTE SUR HEROKU
+--CREER UN CONPTE SUR HEROKU  </br>                                                                                                   
+https://signup.heroku.com/</br>
 
-https://signup.heroku.com/
+--DOWNLOAD HEROKU CLI</br>
+https://devcenter.heroku.com/articles/heroku-cli</br>
 
---TÉLÉCHARGER HEROKU CLI
-https://devcenter.heroku.com/articles/heroku-cli
+--CONFIGURER DJANGO HEROKU</br>
+https://devcenter.heroku.com/articles/django-app-configuration</br>
 
---CONFIGURATEUR DJANGO HEROKU
-https://devcenter.heroku.com/articles/django-app-configuration
+POUR AVOIR LA CONFIGURATION DU WHITENOISE 
+https://whitenoise.evans.io/en/stable/django.html
 
-POUR AVOIR LA CONFIGURATION DU WHITENOISE https://whitenoise.evans.io/en/stable/django.html
+DANS LE TERMINAL TAPEZ CES COMMANDES:</br>
+git init</br>
+git add .</br>
+git commit -m "premier commit"</br>
+heroku login </br>
+heroku create nom_du_domain</br>
+git push heroku master</br>
+heroku run python manage.py migrate</br>
+heroku open</br>
 
-DANS LE TERMINAL, TAPEZ CES COMMANDES :
-git init
-git add .
-git commit -m "premier commit"
-heroku login
-heroku create nom_du_domaine
+dans le setting DEBUG=False</br>
+
+si vous faite des modification sur votre application la seul chose a faire c'est de taper ces lignes de commande:</br>
+git init</br>
+git add .</br>
+git commint -m "expliquer en quelques mots la modification ici"</br>
 git push heroku master
-heroku run python manage.py migrate
-heroku open
 
-dans le paramètre DEBUG=False
-
-si vous avez fait des modifications sur votre application la seule chose a faire c'est de taper ces lignes de commande :
-git init
-git add .
-git commint -m "expliquer en quelques mots la modification ici"
-git push heroku master
