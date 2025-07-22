@@ -1,47 +1,30 @@
-# deployer un projet django sur heroku
-1-CREER VOTRE DJANGO</br> 
-Assurez vous que l'environnemetn virtual est active si vous en avez.
+# Pizza Commander
 
-2-INSTALLER psycopg2, gunicorn, django-heroku, dj_database_url</br> 
+Pizza Commander est un site web simple pour commander des pizzas.  
+Ce projet a été réalisé dans le cadre d’une formation.  
 
-3-CREER LE FICHIER runtime.txt</br> 
+## Description
 
-4-CREER LE FICHIER Procfile sans extension</br> 
+- Page d’accueil avec présentation et lien vers le menu.  
+- Menu des pizzas disponible (page statique).  
+- Site statique prêt à être déployé sur GitHub Pages.
 
-5-GENERER Le fichier requirements.txt
-Rassenble tout vous pakage dans le fichier requirements.txt grace a la commade suivanate.
-pip freeze > requirements.txt</br>
+## Technologie
 
+- HTML/CSS simple  
+- Version statique générée à partir d’un projet Django.
 
-6-METTRE TON PROJECT SUR GIT
-                                                                                     
+## Déploiement
 
---CREER UN CONPTE SUR HEROKU  </br>                                                                                                   
-https://signup.heroku.com/</br>
+Le site est publié sur GitHub Pages à l’adresse :  
+https://mowa2001.github.io/Pizza-Commander/
 
---DOWNLOAD HEROKU CLI</br>
-https://devcenter.heroku.com/articles/heroku-cli</br>
+## Instructions pour lancer localement
 
---CONFIGURER DJANGO HEROKU</br>
-https://devcenter.heroku.com/articles/django-app-configuration</br>
+1. Télécharger ou cloner le dépôt.  
+2. Ouvrir `index.html` dans un navigateur web.  
+3. Naviguer entre les pages statiques `index.html` et `menu.html`.
 
-POUR AVOIR LA CONFIGURATION DU WHITENOISE 
-https://whitenoise.evans.io/en/stable/django.html
+---
 
-DANS LE TERMINAL TAPEZ CES COMMANDES:</br>
-git init</br>
-git add .</br>
-git commit -m "premier commit"</br>
-heroku login </br>
-heroku create nom_du_domain</br>
-git push heroku master</br>
-heroku run python manage.py migrate</br>
-heroku open</br>
-
-dans le setting DEBUG=False</br>
-
-si vous faite des modification sur votre application la seul chose a faire c'est de taper ces lignes de commande:</br>
-git init</br>
-git add .</br>
-git commint -m "expliquer en quelques mots la modification ici"</br>
-git push heroku master
+Merci de votre visite, bon appétit ! 🍕
