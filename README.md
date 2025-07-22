@@ -7,18 +7,12 @@ Ce projet a été réalisé dans le cadre d’une formation.
 
 - Page d’accueil avec présentation et lien vers le menu.  
 - Menu des pizzas disponible (page statique).  
-- Site statique prêt à être déployé sur GitHub Pages.
 
 ## Technologie
 
 - HTML/CSS simple  
-- Version statique générée à partir d’un projet Django.
-
-## Déploiement
-
-Le site est publié sur GitHub Pages à l’adresse :  
-https://mowa2001.github.io/Pizza-Commander/
-
+- Version statique générée à partir d’un projet Django
+  
 ## Instructions pour lancer localement
 
 1. Télécharger ou cloner le dépôt.  
@@ -27,4 +21,4 @@ https://mowa2001.github.io/Pizza-Commander/
 
 ---
 
-Merci de votre visite, bon appétit ! 🍕
+Merci 
